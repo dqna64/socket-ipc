@@ -1,7 +1,7 @@
 import socket
+from constants import PORT
 
 HOST = 'localhost'  # The remote host (replace with the server's hostname or IP address)
-PORT = 50007        # The same port as used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
